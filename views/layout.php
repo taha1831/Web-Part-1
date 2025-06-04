@@ -123,6 +123,7 @@
         <a href="index.php?page=home" class="<?= $pageData['current_page'] === 'home' ? 'active' : '' ?>">Home</a>
         <a href="index.php?page=trending" class="<?= $pageData['current_page'] === 'trending' ? 'active' : '' ?>">Trending</a>
 
+
         <?php if (!empty($pageData['user'])): ?>
             <a href="index.php?page=post" class="<?= $pageData['current_page'] === 'post' ? 'active' : '' ?>">Post</a>
             <span class="welcome-message">Welcome, <?= htmlspecialchars($pageData['user']) ?></span>
