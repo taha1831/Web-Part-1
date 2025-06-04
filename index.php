@@ -188,6 +188,8 @@ if ($page === 'trending') {
 
 
 
+
+
 include $viewFile;
 $content = ob_get_clean();
 
@@ -199,7 +201,6 @@ $pageData = [
     'error' => $_SESSION['error'] ?? null,
     'current_page' => $page,
     'posts' => $posts ?? [],
-    'top_posts' => $top_posts ?? []
 ];
 
 unset($_SESSION['error']);
